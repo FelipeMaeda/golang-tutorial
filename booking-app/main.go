@@ -1,10 +1,24 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	fmt.Println("Welcome to our conference booking application")
+	var conferenceName = "Go Conference"
+	const conferenceTickets = 50
+	var remainingTickets = 50
+
+	fmt.Printf("Welcome to our %v booking application\n", conferenceName)
+	fmt.Printf("We have %v/%v tickets available.\n", remainingTickets, conferenceTickets)
 	fmt.Println("Get your tickets here to attend")
 
-	var conferenceName = "Go Conference"
+	var userName string
+	var userTickets int
+
+	userName = "Tom"
+	userTickets = 2
+	fmt.Printf("User %v booked %v tickets.\n", userName, userTickets)
+	// ask user for their name
+	/* This is a comment */
 }
